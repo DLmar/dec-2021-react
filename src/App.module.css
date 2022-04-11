@@ -1,0 +1,24 @@
+
+.wrap {
+    display: flex;
+
+}
+
+.users {
+    background-color: deepskyblue;
+}
+
+.userDet {
+    background-color: yellow;
+}
+
+.posts {
+    background-color: greenyellow;
+    width: 650px;
+}
+
+.users, .userDet, .posts {
+ margin: 10px;
+    padding: 10px;
+}
+
