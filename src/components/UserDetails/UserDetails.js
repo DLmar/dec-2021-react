@@ -1,11 +1,13 @@
 import React from 'react';
 
+import userDet_style from "./UserDetails.module.css";
+
 const UserDetails = ({user,getUserId}) => {
     const {id, name, username, email, address:{street,suite,city,zipcode,geo:{lat,lng}},
            phone,website,company:{catchPhrase,bs}} = user;
 
     return (
-        <div>
+        <div className={userDet_style.userDet}>
             <h3>id:{id}</h3>
             <h3>name:{name}</h3>
             <h4>username: {username}</h4>
@@ -28,4 +30,4 @@ const UserDetails = ({user,getUserId}) => {
     );
 };
 
-export default UserDetails;
+export {UserDetails};
